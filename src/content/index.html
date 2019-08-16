@@ -4,12 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Portfolio Jakub Matusiak - Front-end Developer</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>Hello world!</h1>
-  
+  <header class="hero">
+    <button class="hamburger">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#o_mnie" class="navigation__link">O mnie</a></li>
+        <li class="navigation__item"><a href="#technologie" class="navigation__link">Technologie</a></li>
+        <li class="navigation__item"><a href="#projekty" class="navigation__link">Projekty</a></li>
+        <li class="navigation__item"><a href="#kontakt" class="navigation__link">Kontakt</a></li>
+      </ul>
+    </nav>
+    <p class="hero__name">Jakub Matusiak</p>
+    <h1 class="hero__title">Front-end Developer</h1>
+    <button class="hero__button"><a href="#projekty" class="hero__link">Zobacz projekty</a></button>
+  </header>
+  <main class="main">
+    <section class="about" id="o_mnie">
+      <h2 class="about__title">O mnie</h2>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Tworzę strony z zachowaniem zasad semantyki. Przyjazne użytkownikom i zoptymalizowane pod kątem wyszukiwania.
+        </p>
+      </div>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Dostosowane do różnych urządzeń, rozdzielczości ekranu oraz najpopularniejszych przeglądarek internetowych.
+        </p>
+      </div>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Wykorzystanie odpowiednich technologii gwarantuje wydajność i niezawodne działanie moich aplikacji.
+        </p>
+      </div>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Świetnie odnajduję się w pracy zespołowej. Jednocześnie potrafię samodzielnie rozwiązywać problemy i oszacować czas potrzebny na wykonanie zadania.
+        </p>
+      </div>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Znajomość języka angielskiego pozwala mi na czytanie i rozumienie dokumentacji technicznej oraz komunikację pisemną.
+        </p>
+      </div>
+      <div class="about__item">
+        <img src="" alt="" class="about__image">
+        <p class="about__paragraph">
+          Odwiedzam konferencje i pojawiam się na lokalnych spotkaniach. Udzielam się w mediach społecznościowych i poszerzam swoją wiedzę poprzez kursy i szkolenia.
+        </p>
+      </div>
+    </section>
+    <section class="technology" id="technologie">
+      <h2 class="technology__title">Technologie</h2>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Podstawowymi technologiami, które wykorzystuję w moich projektach są HTML5, CSS3 oraz JavaScript.
+        </p>
+      </div>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Nadając wygląd stosuję najlepsze praktyki i najnowsze narzędzia takie jak Flexbox czy Grid. Wspomagam się również preprocesorem Sass i metodologią BEM.
+        </p>
+      </div>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Alternatywą dla natywnych aplikacji mobilnych jest wykorzystywane przeze mnie PWA. Aby zapewnić maksymalną zgodność i optymalny wygląd wykorzystuję technikę RWD.
+        </p>
+      </div>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Dane wprowadzone przez użytkownika przechowuję w local storage a dynamiczne treści pobieram z zewnętrznych API.
+        </p>
+      </div>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Przy tworzeniu projektów zawsze używam systemu kontroli wersji Git. Zarówno do projektów indywidualnych jak i grupowych.
+        </p>
+      </div>
+      <div class="technology__item">
+        <img src="" alt="" class="technology__image">
+        <p class="technology__paragraph">
+          Projektując swoje strony wykorzystuję nowoczesne narzędzia takie jak Figma.
+        </p>
+      </div>
+    </section>
+    <section class="project" id="projekty">
+      <h2 class="project__title">Projekty</h2>
+      <section class="project__item">
+        <h3 class="project__name">Resume Creator</h3>
+        <p class="project__paragraph">
+          Kreator pozwalający na stworzenie własnego CV na podstawie informacji podanych w formularzu. Dostępny podgląd z możliwością wydrukowania dokumentu.
+        </p>
+        <div class="preview">
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">Demo</a>
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">GitHub</a>
+        </div>
+      </section>
+      <section class="project__item">
+        <h3 class="project__name">Todo App</h3>
+        <p class="project__paragraph">
+          Aplikacja pozwalająca na zarządzanie zadaniami do wykonania. Możliwość dodawania, usuwania i zaznaczania wykonanych zadań. Wszystko przechowywane w pamięci przeglądarki dzięki local storage.
+        </p>
+        <div class="preview">
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">Demo</a>
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">GitHub</a>
+        </div>
+      </section>
+      <section class="project__item">
+        <h3 class="project__name">Simple Todo App</h3>
+        <p class="project__paragraph">
+          Prosta aplikacja do zarządzania zadaniami do wykonania. Dodawać można zdefiniowane wcześniej zadania, usuwać ostatnie zadanie i czyścić całą listę. Zadania przechowywane są w local storage.
+        </p>
+        <div class="preview">
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">Demo</a>
+          <a href="" class="preview__link"><img src="" alt="" class="preview__image">GitHub</a>
+        </div>
+      </section>
+    </section>
+    <section class="contact" id="kontakt">
+      <h2 class="contact__title">Kontakt</h2>
+      <form class="form">
+        <p class="form__paragraph">
+          <label for="name" class="form__label">Imię:</label>
+          <input type="text" name="name" id="name" class="form__input">
+        </p>
+        <p class="form__paragraph">
+          <label for="email" class="form__label">E-mail:</label>
+          <input type="email" name="name" id="email" class="form__input">
+        </p>
+        <p class="form__paragraph">
+          <label for="message" class="form__label">Treść wiadomości:</label>
+          <textarea name="message" id="message" class="form__message"></textarea>
+        </p>
+        <button class="form__button">Wyślij</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="" class="footer__link"><img src="" alt="" class="footer__image">GitHub</a>
+    <a href="" class="footer__link"><img src="" alt="" class="footer__image">LinkedIn</a>
+    <a href="mailto:kontakt@jakub-matusiak.pl" class="footer__link"><img src="" alt="" class="footer__image">kontakt@jakub-matusiak.pl</a>
+    <p class="footer__copyright">Copyright 2019 &copy Jakub Matusiak</p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
