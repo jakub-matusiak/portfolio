@@ -57,13 +57,35 @@ body {
 }
 
 .hamburger {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  position: fixed;
+  background: none;
+  border: 0;
+  padding: 0;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  &__bar {
+    display: block;
+    background: #444444;
+    width: 30px;
+    height: 3px;
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+  }
 }
 
 .navigation {
-  display: none;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
   &__list {
     list-style: none;
     text-align: center;
@@ -81,6 +103,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
   }
+  &--active {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .section {
@@ -94,6 +120,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin: 16px 0;
+    padding-top: 16px;
   }
   &__project {
     color: #444444;
