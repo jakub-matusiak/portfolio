@@ -22,9 +22,11 @@
         <li class="navigation__item"><a href="#kontakt" class="navigation__link">Kontakt</a></li>
       </ul>
     </nav>
-    <p class="hero__name">Jakub Matusiak</p>
-    <h1 class="hero__title">Front-end Developer</h1>
-    <button class="hero__button"><a href="#projekty" class="hero__link">Zobacz projekty</a></button>
+    <div class="hero__container">
+      <p class="hero__name">Jakub Matusiak</p>
+      <h1 class="hero__title">Front-end Developer</h1>
+      <button class="hero__button"><a href="#projekty" class="hero__link">Zobacz projekty</a></button>
+    </div>
   </header>
   <main class="main">
     <section class="section" id="o_mnie">
@@ -113,8 +115,8 @@
           Kreator pozwalający na stworzenie własnego CV na podstawie informacji podanych w formularzu. Dostępny podgląd z możliwością wydrukowania dokumentu.
         </p>
         <div class="preview">
-          <a href="" class="preview__link"><img src="assets/img/demo.svg" alt="" class="preview__image">Demo</a>
-          <a href="" class="preview__link"><img src="assets/img/github.svg" alt="" class="preview__image">GitHub</a>
+          <img src="assets/img/demo.svg" alt="" class="preview__image"><a href="" class="preview__link">Demo</a>
+          <img src="assets/img/github.svg" alt="" class="preview__image"><a href="" class="preview__link">GitHub</a>
         </div>
       </section>
       <section class="section__item">
@@ -123,8 +125,8 @@
           Aplikacja pozwalająca na zarządzanie zadaniami do wykonania. Możliwość dodawania, usuwania i zaznaczania wykonanych zadań. Wszystko przechowywane w pamięci przeglądarki dzięki local storage.
         </p>
         <div class="preview">
-          <a href="" class="preview__link"><img src="assets/img/demo.svg" alt="" class="preview__image">Demo</a>
-          <a href="" class="preview__link"><img src="assets/img/github.svg" alt="" class="preview__image">GitHub</a>
+          <img src="assets/img/demo.svg" alt="" class="preview__image"><a href="" class="preview__link">Demo</a>
+          <img src="assets/img/github.svg" alt="" class="preview__image"><a href="" class="preview__link">GitHub</a>
         </div>
       </section>
       <section class="section__item">
@@ -133,8 +135,8 @@
           Prosta aplikacja do zarządzania zadaniami do wykonania. Dodawać można zdefiniowane wcześniej zadania, usuwać ostatnie zadanie i czyścić całą listę. Zadania przechowywane są w local storage.
         </p>
         <div class="preview">
-          <a href="" class="preview__link"><img src="assets/img/demo.svg" alt="" class="preview__image">Demo</a>
-          <a href="" class="preview__link"><img src="assets/img/github.svg" alt="" class="preview__image">GitHub</a>
+          <img src="assets/img/demo.svg" alt="" class="preview__image"><a href="" class="preview__link">Demo</a>
+          <img src="assets/img/github.svg" alt="" class="preview__image"><a href="" class="preview__link">GitHub</a>
         </div>
       </section>
     </section>
@@ -158,9 +160,15 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="" class="footer__link"><img src="assets/img/github.svg" alt="" class="footer__image">GitHub</a>
-    <a href="" class="footer__link"><img src="assets/img/linkedin.svg" alt="" class="footer__image">LinkedIn</a>
-    <a href="mailto:kontakt@jakub-matusiak.pl" class="footer__link"><img src="assets/img/email.svg" alt="" class="footer__image">kontakt@jakub-matusiak.pl</a>
+    <div class="footer__container">
+      <img src="assets/img/github.svg" alt="" class="footer__image"><a href="" class="footer__link">GitHub</a>
+    </div>
+    <div class="footer__container">
+      <img src="assets/img/linkedin.svg" alt="" class="footer__image"><a href="" class="footer__link">LinkedIn</a>
+    </div>
+    <div class="footer__container">
+      <img src="assets/img/email.svg" alt="" class="footer__image"><a href="mailto:kontakt@jakub-matusiak.pl" class="footer__link">kontakt@jakub-matusiak.pl</a>
+    </div>
     <p class="footer__copyright">Copyright 2019 &copy Jakub Matusiak</p>
   </footer>
   <script src="js/main.js"></script>
