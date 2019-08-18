@@ -172,6 +172,12 @@ body {
     font-weight: 400;
     margin: 16px 0;
   }
+  &__image {
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      height: 175px;
+    }
+  }
   &__paragraph {
     color: #444444;
     font-size: 16px;
