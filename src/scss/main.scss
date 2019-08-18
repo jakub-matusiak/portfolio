@@ -64,6 +64,9 @@ body {
   top: 20px;
   right: 20px;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   &__bar {
     display: block;
     background: #444444;
@@ -86,15 +89,31 @@ body {
   opacity: 0;
   transform: translateX(100vw);
   transition: transform 250ms ease-out, opacity 250ms ease-out;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+    height: 50px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transform: translateX(0);
+  }
   &__list {
     list-style: none;
     text-align: center;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      background: #FFFFFF;
+      height: 50px;
+    }
   }
   &__item {
     margin: 48px 0;
     padding: 10px 15px;
+    @media screen and (min-width: 768px) {
+      margin: 8px 16px;
+    }
   }
   &__link {
     color: #444444;
@@ -102,6 +121,9 @@ body {
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
   &--active {
     opacity: 1;
@@ -111,6 +133,7 @@ body {
 
 .section {
   text-align: center;
+  padding-top: 48px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -125,15 +148,14 @@ body {
   }
   &__item {
     width: 350px;
-    margin: 32px 24px;
+    margin: 24px;
   }
   &__title {
     color: #444444;
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 16px 0;
-    padding-top: 16px;
+    margin: 0;
   }
   &__project {
     color: #444444;
@@ -141,14 +163,12 @@ body {
     font-weight: 400;
     margin: 16px 0;
   }
-  &__image {
-    margin-top: 16px;
-  }
   &__paragraph {
     color: #444444;
     font-size: 16px;
     font-weight: 300;
     line-height: 32px;
+    margin-bottom: 0;
   }
 }
 
