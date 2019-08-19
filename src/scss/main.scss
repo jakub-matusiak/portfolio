@@ -19,7 +19,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 100vh;
   &__container {
     text-align: right;
@@ -100,9 +101,9 @@ body {
   transition: transform 250ms ease-out, opacity 250ms ease-out;
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
+    max-width: 1200px;
     height: 50px;
     top: 0;
-    right: 0;
     opacity: 1;
     transform: translateX(0);
   }
@@ -138,6 +139,11 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section {
