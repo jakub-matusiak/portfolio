@@ -32,6 +32,7 @@ body {
     margin: 0;
     @media screen and (min-width: 768px) {
       font-size: 36px;
+      animation: 500ms cubic-bezier(.4,.74,.3,1.4) fadeIn 350ms backwards;
     }
   }
   &__title {
@@ -41,6 +42,7 @@ body {
     margin: 0;
     @media screen and (min-width: 768px) {
       font-size: 48px;
+      animation: 500ms cubic-bezier(.4,.74,.3,1.4) fadeIn 400ms backwards;
     }
   }
   &__link {
@@ -55,6 +57,7 @@ body {
     padding: 8px 24px;
     @media screen and (min-width: 768px) {
       font-size: 16px;
+      animation: 500ms cubic-bezier(.4,.74,.3,1.4) fadeIn 450ms backwards;
     }
   }
 }
@@ -115,6 +118,18 @@ body {
     padding: 10px 15px;
     @media screen and (min-width: 768px) {
       margin: 8px 16px;
+      &:first-child {
+        animation: 400ms cubic-bezier(.4,.74,.3,1.4) bounce 700ms backwards;
+      }
+      &:nth-child(2) {
+        animation: 400ms cubic-bezier(.4,.74,.3,1.4) bounce 800ms backwards;
+      }
+      &:nth-child(3) {
+        animation: 400ms cubic-bezier(.4,.74,.3,1.4) bounce 900ms backwards;
+      }
+      &:last-child {
+        animation: 400ms cubic-bezier(.4,.74,.3,1.4) bounce 1s backwards;
+      }
     }
   }
   &__link {
@@ -253,5 +268,31 @@ body {
     font-size: 12px;
     font-weight: 300;
     margin-top: 32px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  50% {
+    opacity: .5;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
