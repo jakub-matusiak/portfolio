@@ -58,6 +58,15 @@ body {
     @media screen and (min-width: 768px) {
       font-size: 16px;
       animation: 500ms cubic-bezier(.4,.74,.3,1.4) fadeIn 450ms backwards;
+      transition: background 250ms ease-out, color 150ms ease-out;
+      &:hover {
+        background: #85B3FF;
+        color: #FFFFFF;
+      }
+      &:focus {
+        background: #85B3FF;
+        color: #FFFFFF;
+      }
     }
   }
 }
@@ -140,6 +149,13 @@ body {
     text-transform: uppercase;
     @media screen and (min-width: 768px) {
       font-size: 16px;
+      transition: color 150ms ease-out;
+      &:hover {
+        color: #85B3FF;
+      }
+      &:focus {
+        color: #85B3FF;
+      }
     }
   }
   &--active {
@@ -235,6 +251,7 @@ body {
     height: 300px;
   }
   &__submit {
+    background: none;
     color: #444444;
     font-size: 14px;
     font-weight: 300;
@@ -242,6 +259,17 @@ body {
     border: 1px solid #E5E5E5;
     width: 130px;
     height: 35px;
+    @media screen and (min-width: 768px) {
+      transition: background 250ms ease-out, color 150ms ease-out;
+      &:hover {
+        background: #85B3FF;
+        color: #FFFFFF;
+      }
+      &:focus {
+        background: #85B3FF;
+        color: #FFFFFF;
+      }
+    }
   }
 }
 
