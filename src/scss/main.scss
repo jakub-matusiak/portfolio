@@ -79,6 +79,18 @@ body {
   top: 20px;
   right: 20px;
   z-index: 1;
+  &--active &__bar {
+    &:first-child {
+      transform: rotate(135deg) translate(6px, -6px);
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &:last-child {
+      transform: rotate(45deg) translate(-5px, -6px);
+      opacity: 0;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -87,6 +99,7 @@ body {
     background: #444444;
     width: 30px;
     height: 3px;
+    transition: transform 250ms ease-out, opacity 150ms ease-out;
     &:nth-child(2) {
       margin: 5px 0;
     }
