@@ -226,6 +226,11 @@ body {
     font-weight: 300;
     line-height: 32px;
     margin-bottom: 0;
+    &--project {
+      @media screen and (min-width: 768px) {
+        min-height: 160px;
+      }
+    }
   }
 }
 
