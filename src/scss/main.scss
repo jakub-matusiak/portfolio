@@ -333,6 +333,23 @@ body {
   }
 }
 
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:focus {
+    transform: scale(1.1);
+  }
+  &--active {
+    opacity: 1;
+  }
+}
+
 @keyframes bounce {
   0% {
     opacity: 0;
