@@ -248,6 +248,15 @@ body {
     font-size: 16px;
     text-decoration: none;
     margin: 4px;
+    @media screen and (min-width: 768px) {
+      transition: color 150ms ease-out;
+      &:hover {
+        color: #85B3FF;
+      }
+      &:focus {
+        color: #85B3FF;
+      }
+    }
   }
 }
 
@@ -324,6 +333,15 @@ body {
     font-weight: 300;
     text-decoration: none;
     margin: 8px;
+    @media screen and (min-width: 768px) {
+      transition: color 150ms ease-out;
+      &:hover {
+        color: #85B3FF;
+      }
+      &:focus {
+        color: #85B3FF;
+      }
+    }
   }
   &__copyright {
     color: #444444;
