@@ -169,18 +169,18 @@
     <section class="section" id="kontakt">
       <h2 class="section__title">Zainteresowałem Cię?</h2>
       <p class="section__paragraph">Skontaktuj się ze mną!</p>
-      <form class="form">
+      <form class="form" action="https://formspree.io/kontakt@jakub-matusiak.pl" method="POST">
         <p class="form__paragraph">
           <label for="name" class="form__label">Imię:</label>
-          <input type="text" name="name" id="name" class="form__input">
+          <input type="text" name="name" id="name" class="form__input" required>
         </p>
         <p class="form__paragraph">
           <label for="email" class="form__label">E-mail:</label>
-          <input type="email" name="email" id="email" class="form__input">
+          <input type="email" name="email" id="email" class="form__input" required>
         </p>
         <p class="form__paragraph">
           <label for="message" class="form__label">Treść wiadomości:</label>
-          <textarea name="message" id="message" class="form__message"></textarea>
+          <textarea name="message" id="message" class="form__message" required></textarea>
         </p>
         <input type="submit" value="Wyślij" class="form__submit">
       </form>

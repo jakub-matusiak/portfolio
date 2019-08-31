@@ -269,29 +269,30 @@ body {
     text-align: left;
   }
   &__label {
+    display: block;
     color: #444444;
     font-size: 16px;
     font-weight: 300;
+    margin: 2px 0;
   }
   &__input {
     border: 1px solid #E5E5E5;
     width: 325px;
-    height: 35px;
+    padding: 8px;
   }
   &__message {
     border: 1px solid #E5E5E5;
     width: 325px;
     height: 300px;
+    padding: 8px;
   }
   &__submit {
     background: none;
     color: #444444;
     font-size: 14px;
     font-weight: 300;
-    background: none;
     border: 1px solid #E5E5E5;
-    width: 130px;
-    height: 35px;
+    padding: 8px 32px;
     @media screen and (min-width: 768px) {
       transition: background 250ms ease-out, color 150ms ease-out;
       &:hover {
