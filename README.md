@@ -1,4 +1,4 @@
-# Todo App
+# Portfolio
 ![Screenshot](src/assets/img/screenshot.png)
 > My personal portfolio containing sections with information about me, technologies which I use and my completed projects. There is also a contact form if you would like to message me.
 
@@ -27,7 +27,7 @@ If you want to run my website locally, enter the following commands in console:
 `gulp`
 
 ## Preview
-To live preview of my project visit this website: [Portfolio](https://jakub-matusiak.github.io)
+To live preview of my project visit this website: [Portfolio](https://jakub-matusiak.pl)
 
 ## Status
 Project is _completed_.
