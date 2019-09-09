@@ -701,7 +701,7 @@ body {
     font-weight: 300;
     margin-top: 32px; }
 
-.top {
+.top-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -711,15 +711,15 @@ body {
   -o-transition: transform 250ms ease-out, opacity 250ms ease-out;
   transition: transform 250ms ease-out, opacity 250ms ease-out;
   transition: transform 250ms ease-out, opacity 250ms ease-out, -webkit-transform 250ms ease-out; }
-  .top:hover {
+  .top-btn:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
-  .top:focus {
+  .top-btn:focus {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
-  .top--active {
+  .top-btn--active {
     opacity: 1; }
 
 @-webkit-keyframes bounce {
