@@ -219,6 +219,10 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin: 16px 0;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      margin: 32px 0;
+    }
   }
   &__image {
     margin: 0;
