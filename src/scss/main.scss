@@ -209,6 +209,10 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      margin: 32px 0;
+    }
   }
   &__project {
     color: #444444;
